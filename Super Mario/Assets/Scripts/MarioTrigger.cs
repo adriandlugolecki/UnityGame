@@ -9,8 +9,10 @@ public class MarioTrigger : MonoBehaviour
         if (other.tag == "Player")
         
             Debug.Log("zderzenie");
-        
+        if (other.tag == "plant")
+            Debug.Log("Zjedzony");
     }
+    
     // Start is called before the first frame update
     void Start()
     {

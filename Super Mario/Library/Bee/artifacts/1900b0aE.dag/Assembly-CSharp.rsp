@@ -378,6 +378,7 @@
 "Assets/Scripts/FollowMario.cs"
 "Assets/Scripts/MarioTrigger.cs"
 "Assets/Scripts/Move.cs"
+"Assets/Scripts/PlantMove.cs"
 -langversion:9.0
 
 /deterministic

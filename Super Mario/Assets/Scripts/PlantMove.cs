@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlantMove : MonoBehaviour
 {
+    private GameManager gameManager;
     private Vector2 position;
     private float speed = 2f;
     private Vector2 target;
@@ -13,7 +14,7 @@ public class PlantMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameManager = GameManager.Instance;
         position = gameObject.transform.position;
         positionZero = position;
         target = new Vector2(position.x, position.y + 4);
@@ -43,5 +44,13 @@ public class PlantMove : MonoBehaviour
             
         }
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player")
+        {
+            
+            gameManager.TakeAllLife();
+        }
     }
 }

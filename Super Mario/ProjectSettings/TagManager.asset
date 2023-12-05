@@ -6,6 +6,8 @@ TagManager:
   tags:
   - touch
   - plant
+  - EndFlag
+  - void
   layers:
   - Default
   - TransparentFX

@@ -16,12 +16,15 @@ public class Move : MonoBehaviour
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-            animator.SetBool("IsJumping", true);
-        }
+        
+        
+            if (Input.GetButtonDown("Jump"))
+            {
+                jump = true;
+                animator.SetBool("IsJumping", true);
+            }
+        
+        
         
     }
 
@@ -34,7 +37,7 @@ public class Move : MonoBehaviour
 
     public void OnLanding()
     {
-        Debug.Log("OnLanding()");
+        
         animator.SetBool("IsJumping", false);
     }
 }

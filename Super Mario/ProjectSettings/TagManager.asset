@@ -8,6 +8,7 @@ TagManager:
   - plant
   - EndFlag
   - void
+  - star
   layers:
   - Default
   - TransparentFX

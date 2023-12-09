@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 5692557859067355370}
   - component: {fileID: 1272450225735066313}
   - component: {fileID: 6646026765459997564}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Goomba
   m_TagString: touch
   m_Icon: {fileID: 0}
@@ -245,7 +245,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3491997554839452740}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:

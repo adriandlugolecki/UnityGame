@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5705698840667607498}
   - component: {fileID: 4630649013562562354}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 1038004212493523454}
   - component: {fileID: 8354455983157534876}
   - component: {fileID: 6679782886756089765}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: mediumPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7182783489025332614}
   - component: {fileID: 5712864423759332635}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}

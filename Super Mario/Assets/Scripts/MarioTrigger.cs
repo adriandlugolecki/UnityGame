@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MarioTrigger : MonoBehaviour
 {
+    
     private GameManager gameManager;
     public AudioClip dmg;
     private AudioSource audioSource;
@@ -39,6 +40,7 @@ public class MarioTrigger : MonoBehaviour
             gameObject.SetActive(false);
             gameManager.TakeAllLife();
         }
+        
         
     }
     

@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
+    public AudioClip coin;
+    private AudioSource audioSource;
     private GameManager gameManager;
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         gameManager = GameManager.Instance;
     }
 
@@ -20,7 +23,9 @@ public class Coin : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            Destroy(gameObject);
+            
+            audioSource.Play();
+            Destroy(gameObject,0.3f);
             gameManager.AddScore(200);
         }
     }

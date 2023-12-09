@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6696159248477960741}
   - component: {fileID: 5482325150400580982}
   - component: {fileID: 5496349665365805017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: plant
   m_TagString: plant
   m_Icon: {fileID: 0}
@@ -151,6 +151,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 196142504550497601, guid: 484bb2e0180380c4b94ff847c94c4534, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 708021579452204640, guid: 484bb2e0180380c4b94ff847c94c4534, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7215604973290158994, guid: 484bb2e0180380c4b94ff847c94c4534, type: 3}
       propertyPath: m_LocalScale.y
       value: 3.3860502
@@ -162,6 +170,10 @@ PrefabInstance:
     - target: {fileID: 7364984148391071709, guid: 484bb2e0180380c4b94ff847c94c4534, type: 3}
       propertyPath: m_Name
       value: PlantPipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364984148391071709, guid: 484bb2e0180380c4b94ff847c94c4534, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9147847353063833186, guid: 484bb2e0180380c4b94ff847c94c4534, type: 3}
       propertyPath: m_LocalPosition.x

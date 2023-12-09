@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1640969264075485827}
   - component: {fileID: 983479469152980676}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8204666925759782602}
   - component: {fileID: 951169344799856853}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2316142943899275679}
   - component: {fileID: 7258338449237277394}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: giftPlatform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -260,7 +260,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4839077399390161679}
   - component: {fileID: 3224449641265990724}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 14 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -344,7 +344,7 @@ GameObject:
   m_Component:
   - component: {fileID: 201948712568259497}
   - component: {fileID: 7580565943541129952}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: 14 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -481,6 +481,10 @@ PrefabInstance:
     - target: {fileID: 8806007559095842377, guid: ef12b73e59414164a9cf62505e7cb1bf, type: 3}
       propertyPath: m_Name
       value: MysteryBlock
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806007559095842377, guid: ef12b73e59414164a9cf62505e7cb1bf, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1513980358886050588, guid: ef12b73e59414164a9cf62505e7cb1bf, type: 3}

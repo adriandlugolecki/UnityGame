@@ -70,11 +70,19 @@ public class EnemyDown : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            Physics2D.IgnoreCollision(other.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
+            Physics2D.IgnoreCollision(other.GetComponentInChildren<BoxCollider2D>(), GetComponent<BoxCollider2D>());
+            //other.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0,2));
             down = true;
             gameManager.AddScore(100);
         }
-            
-
-        
+  
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "touch")
+        {
+            Physics2D.IgnoreCollision(collision.gameObject.GetComponent<BoxCollider2D>(), GetComponent<BoxCollider2D>());
+        }
     }
 }

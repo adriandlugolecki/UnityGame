@@ -49,7 +49,6 @@ public class PlantMove : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            
             gameManager.TakeAllLife();
         }
     }

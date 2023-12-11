@@ -1,12 +1,9 @@
-using JetBrains.Annotations;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Move : MonoBehaviour
 {
-    private GameManager gameManager;
+    
     public CharacterController2D controller;
     public Animator animator;
     private float runSpeed = 40f;
@@ -15,29 +12,21 @@ public class Move : MonoBehaviour
     float horizontalMove = 0f;
     float time=0f;
     public Text boost;
-    private void Start()
-    {
-        gameManager = GameManager.Instance;
-    }
+
     void Update()
     {
-
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
-        
-        
+       
         if (Input.GetButtonDown("Jump") && onGround)
         {
+            
             jump = true;
             animator.SetBool("IsJumping", true);
             onGround = false;
         }
-        
-        
-        
     }
     
-
     void FixedUpdate()
     {
         controller.Move(horizontalMove * Time.fixedDeltaTime, jump);

@@ -8,6 +8,7 @@ using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
+    public GameObject MainCamera;
     public static GameManager Instance;
     public int score = 0;
     public int lives = 3;
@@ -17,7 +18,7 @@ public class GameManager : MonoBehaviour
     public Text timeText;
     public GameObject gameOverView;
     public GameObject EndView;
-
+    AudioSource[] aSources;
     private void Awake()
     {
         if (Instance == null)
@@ -71,7 +72,7 @@ public class GameManager : MonoBehaviour
     public void TakeLife()
     {
         lives--;
-        if(lives < 0)
+        if(lives < 1)
         {
             RestartGame();
         }
@@ -88,21 +89,35 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        aSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource source in aSources)
+        {
+            source.Pause();
+        }
         gameOverView.SetActive(true);
     }
     public void NewGame()
     {
+        aSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource source in aSources)
+        {
+            source.Play();
+        }
         time = 0;
         score = 0;
         lives = 3;
-        SceneManager.LoadScene("Start");
+        SceneManager.LoadScene("Map");
         UpdateUI();
         gameOverView.SetActive(false);
         EndView.SetActive(false);
     }
     public void EndGame()
     {
-        
+        aSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
+        foreach (AudioSource source in aSources)
+        {
+            source.Pause();
+        }
         EndView.SetActive(true);
     }
 }

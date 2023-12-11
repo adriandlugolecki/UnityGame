@@ -8,6 +8,7 @@ public class PlatformMove : MonoBehaviour
     public Vector2 start;
     public Vector2 end;
     private bool temp = true;
+    private Transform oldParent;
     // Start is called before the first frame update
     void Start()
     {
